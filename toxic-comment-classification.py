@@ -1,11 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
 
 
 import pandas as pd 
-import  matplotlib.pyplot as plt
 import numpy as np 
 import tensorflow as tf
 import keras
@@ -17,8 +12,6 @@ from nltk.stem.porter import PorterStemmer
 from wordcloud import WordCloud
 from nltk.stem.snowball import SnowballStemmer
 from sklearn.model_selection import train_test_split
-import pickle
-import xgboost as xgb
 from sklearn.linear_model import LogisticRegression
 from sklearn.naive_bayes import MultinomialNB
 from sklearn import metrics
