@@ -15,17 +15,32 @@ This repository contains a machine learning project for classifying toxic commen
 The project uses the [Toxic Comment Classification Dataset](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge) from Kaggle. This dataset consists of a large number of comments from various online platforms, labeled with different types of toxicity, such as toxic, severe toxic, obscene, threat, insult, and identity hate.
 
 ## Installation
-1. Clone the repository:
-   ```
-   git clone https://github.com/your-username/toxic-comment-classification.git
-   ```
-2. Navigate to the project directory:
+
+1. Navigate to the project directory:
    ```
    cd toxic-comment-classification
    ```
-3. Install the required dependencies:
+2. Install the required dependencies:
    ```
-   pip install -r requirements.txt
+import pandas as pd 
+import numpy as np 
+import tensorflow as tf
+import keras
+import re
+import string
+import nltk
+from nltk.corpus import stopwords
+from nltk.stem.porter import PorterStemmer
+from wordcloud import WordCloud
+from nltk.stem.snowball import SnowballStemmer
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.naive_bayes import MultinomialNB
+from sklearn import metrics
+from sklearn.metrics import roc_auc_score , accuracy_score , confusion_matrix , f1_score
+from sklearn.multiclass import OneVsRestClassifier
+from skmultilearn.problem_transform import BinaryRelevance
+from sklearn.feature_extraction.text import TfidfVectorizer
    ```
 
 ## Usage
