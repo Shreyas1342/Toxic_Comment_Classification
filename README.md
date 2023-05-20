@@ -21,7 +21,7 @@ The project uses the [Toxic Comment Classification Dataset](https://www.kaggle.c
    cd toxic-comment-classification
    ```
 2. Install the required dependencies:
-  ```
+   ```
    pip install -r requirements.txt
    ```
 
@@ -44,11 +44,17 @@ The project uses the [Toxic Comment Classification Dataset](https://www.kaggle.c
    ```
    This script evaluates the trained model on a test set and displays the classification metrics.
 
+4. Run the web application:
+   ```
+   streamlit run main.py
+   ```
+   This command runs the Streamlit application, allowing you to interact with the toxic comment classification model through a user-friendly interface.
+
 ## Model
 The project uses logistic regression and random forest classifiers for toxic comment classification. These algorithms are commonly used for text classification tasks and have been shown to perform well in various scenarios. The models are trained using the preprocessed dataset and optimized to minimize the classification error.
 
 ## Evaluation
-The model's performance is evaluated using common classification metrics, including accuracy, precision, recall, F1 score, and Area Under the ROC Curve (AUC). For logistic regression, the ***training AUC score is 0.99** and the ***testing AUC score is 0.97**. These high AUC scores indicate that the model has a strong ability to discriminate between toxic and non-toxic comments.
+The model's performance is evaluated using common classification metrics, including accuracy, precision, recall, F1 score, and Area Under the ROC Curve (AUC). For logistic regression, the **training AUC score is 0.99** and the **testing AUC score is 0.97**. These high AUC scores indicate that the model has a strong ability to discriminate between toxic and non-toxic comments.
 
 ## Contributing
 Contributions to this project are welcome. If you have any ideas or suggestions, feel free to open an issue or submit a pull request.
