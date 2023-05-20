@@ -49,6 +49,8 @@ The project uses the [Toxic Comment Classification Dataset](https://www.kaggle.c
    streamlit run main.py
    ```
    This command runs the Streamlit application, allowing you to interact with the toxic comment classification model through a user-friendly interface.
+   ![image](https://github.com/Shreyas1342/Toxic_Comment_Classification/assets/114645357/29bbc78a-f8e0-446a-a02d-7332ecb20ca7)
+
 
 ## Model
 The project uses logistic regression and random forest classifiers for toxic comment classification. These algorithms are commonly used for text classification tasks and have been shown to perform well in various scenarios. The models are trained using the preprocessed dataset and optimized to minimize the classification error.
